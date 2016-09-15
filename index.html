@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Perette et ses vaches</title>
+    <!-- BOOTSTRAP installation -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified Bootstrap JavaScript + JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Kaushan+Script|Merienda|Permanent+Marker" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <img class="pull-left" src="images/minivacheverte.png">
+                    <a class="navbar-brand" href="#">Perette et ses vaches</a>
+                    <p class="hidden-xs navbar-text"></p>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="lislide"><a href="#accueil">Qui sommes nous</a></li>
+                        <li class="lislide"><a href="#produit">Nos produits</a></li>
+                        <li class="lislide"><a href="#contact">Nous contacter</a></li>
+                        <li class="lislide"><a href="#map">Nous trouver</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Chercher">
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-warning navbar-btn" id="myBtn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Panier</button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- header carrousel image-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="carrouselImg" src="images/carrousel1.jpg" alt="Ma ferme">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Bienvenue sur le site de </br>Perette et ses vaches</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carrouselImg" src="images/carrousel2.jpg" alt="Mes vaches">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Niché en plein coeur du Perche</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carrouselImg" src="images/carrousel3.jpg" alt="Mes vaches">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Une exploitation a taille humaine</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- header carrousel text-->
+    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="row ligne">
+        <div class="col-xs-12">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div class="conterneurTextCarrousel">
+                            <p class="histoire">Nous vous souhaitons une agréable visite sur le site internet de l'exploitation agricole laitière "Perette et ses vaches".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div class="conterneurTextCarrousel">
+                            <p class="histoire">Dans cette belle région où évoluent son troupeau de vaches laitières. Composé de 50 vaches laitières de race Prim'Holstein, vaches noires et blanches, de vaches de race Brune.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div class="conterneurTextCarrousel">
+                            <p class="histoire">Perette vous propose ses produits artisanaux fabriqué a la ferme. L'atelier transformation existe depuis plus de quarante ans et la recette n'a pas changé.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- Corps du site-->
+    <!-- Presentation-->
+
+    <div id="accueil">
+        <div class="blockSpace"></div>
+        <div class="container-fluid conteneur">
+            <h2>Qui sommes nous</h2>
+            <div class="blockSpace1"></div>
+            <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                <p class="text-left" id="textPresentation">
+                    Nous vous souhaitons une agréable visite sur le site internet de l'exploitation agricole laitière "Perette et ses vaches".</br>
+                    </br>
+
+                    La Ferme "Perette et ses vaches" est une exploitation agricole familiale située dans le beau département de l'eure et loire. Depuis trois générations, nous élevons des vaches laitières.</br>
+                    </br>
+
+                    Fabriqués à la ferme, nous commercialisons nos produits, lait cru entier, fromage frais moulé à la louche, fromage blanc, des yahourt nature ou sucrés.</br>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+                <img class="pull-left" id="presentation" src="images/presentation0.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Produits-->
+    <div id="produit">
+        <div class="blockSpace"></div>
+        <div class="container-fluid conteneur">
+            <h2>Produit</br></h2>
+            <div class="blockSpace1"></div>
+            <!-- Premier produit -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/lait_cru3.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Deuxième produit -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/lait_cru5.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troisième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/lait_demi_ecreme.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[3]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quatrième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/pouligny_saint_pierre.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[4]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[4]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cinquième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/saint_nectaire.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[5]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[5]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/sainte_maure_de_tourraine.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[6]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[6]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Septième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/yahourt_sucre.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+                        <!-- Groupe de boutons -->
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[7]"><span class="glyphicon glyphicon-minus"></span></button>
+                                </span>
+                                <input type="text" name="quant[7]" class="form-control input-number" value="1" min="1" max="10"><span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]"><span class="glyphicon glyphicon-plus"></span></button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Huitième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/yaourt_nature.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim risus metus, vitae pellentesque lorem. </p>
+                        <!-- Groupe de boutons -->
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5"><span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[8]"><span class="glyphicon glyphicon-minus"></span></button>
+                                </span>
+                                <input type="text" name="quant[8]" class="form-control input-number" value="1" min="1" max="10"><span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]"><span class="glyphicon glyphicon-plus"></span></button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div class="container-fluid conteneur">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="contact">
+            <div class="blockSpace"></div>
+            <h2>Nous contacter</h2>
+            <div class="blockSpace1"></div>
+            <form>
+                <div class="form-group">
+                    <label for="Nom">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputNom" placeholder="Nom">
+                </div>
+                </br>
+                <div class="form-group">
+                    <label for="Nom">Prénom</label>
+                    <input type="text" class="form-control" id="exampleInputPrenom" placeholder="Prénom">
+                </div>
+                </br>
+                <div class="form-group">
+                    <label for="Nom">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                </div>
+                </br>
+                <div class="form-group">
+                    <label for="Nom">Votre message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                </br>
+                <button type="submit" class="btn btn-default">Envoyer</button>
+            </form>
+            <!--          </br></br></br> -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="map">
+            <div class="map">
+                <div class="blockSpace"></div>
+                <h2>Nous trouver</h2></br>
+                <div class="blockSpace1"></div>
+                <div class="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2642.673793002049!2d0.9779472153459322!3d48.5203177324051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c30217b0f9e1%3A0x4141e1260a84200f!2s3+Rue+du+Ch%C3%A2teau%2C+28240+Manou!5e0!3m2!1sfr!2sfr!4v1473843212678"
+                        width="600" height="355" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LA MODAL -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Votre commande</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-lg-2">
+                                <form>
+                                    <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer" class="pull-right" />
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <div class="container boite">
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="tableaudebord">
+                                        <div class="contact_container">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <h2>Récapitulatif de la commande</h2>
+                                                    <div class="recap">
+                                                      <table class="table">
+                                                        <thead class="thead-default">
+                                                          <tr>
+                                                            <th>#</th>
+                                                            <th>Nom du produit</th>
+                                                            <th>Quantité</th>
+                                                            <th>Prix Unitaire</th>
+                                                            <th>Sous total</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Sainte Maure de Tourraine</td>
+                                                            <td>2</td>
+                                                            <td>4,50 €</td>
+                                                            <td> 9,00 €</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>Pouligny Saint Pierre</td>
+                                                            <td>1</td>
+                                                            <td>5,00 €</td>
+                                                            <td>5,00 €</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>Lait cru maison x5</td>
+                                                            <td>2</td>
+                                                            <td>2,50 €</td>
+                                                            <td>5,00 €</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <th scope="row"></th>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td>Total</td>
+                                                            <td>19,00 €</td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                    <div class="nb_com" style="display:none">9</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='container boite'>
+                            <div class='row'>
+
+                                <form class="form-horizontal" role="form">
+                                    <div class='row'>
+                                        <div class="col-lg-12">
+                                            <div class="titleprghp">
+                                                <span class="prg">Information client</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class='row'>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="civilite" class="col-sm-2 control-label">Civilité</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control">
+                                                      <option>Mlle.</option>
+                                                      <option>Mme.</option>
+                                                      <option>M.</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="nom" class="col-sm-2 control-label">Nom :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="name" id="name">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="prenom" class="col-sm-2 control-label">Prenom :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="prenom" id="prenom">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="mail" class="col-sm-2 control-label">Email :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" name="email" id="email">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">Mobile :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="mobile" id="mobile">
+                                                </div>
+                                            </div>
+                                            <!--                                    </form>-->
+                                        </div>
+
+
+
+
+
+                                        <div class="col-lg-6">
+                                            <!--<form class="form-horizontal" role="form">-->
+                                            <div class="form-group">
+                                                <label for="societe" class="col-sm-2 control-label">Soci&eacute;t&eacute;</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="societe" id="societe">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="adresse" class="col-sm-2 control-label">Adresse</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="adresse" id="adresse">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="cp" class="col-sm-2 control-label">Code Postal</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control" name="cp" id="cp">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="ville" class="col-sm-2 control-label">Ville</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="ville" class="form-control" id="ville">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="pays" class="col-sm-2 control-label">Pays</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="pays" id="pays">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row">
+
+                                        <div class="col-xs-12">
+                                            <div class="col-lg-12">
+                                                <div class="titleprghp">
+                                                    <span class="prg">Moyen de paiement</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="control-group col-lg-12">
+                                                    <div class="col-sm-12">
+                                                        <input name="radios" id="radios-0" value="1" checked="checked" type="radio"> <img src="images/paypal.gif" />
+                                                        <input name="radios" id="radios-1" value="2" type="radio"> <img src="images/mastercard.gif" />
+                                                        <input name="radios" id="radios-2" value="3" type="radio"> <img src="images/visa.gif" />
+                                                        <input name="radios" id="radios-3" value="4" type="radio"> <img src="images/amex.gif" />
+                                                    </div>
+                                                </div>
+                                                <!--</form>-->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <!--</form>-->
+                        </div>
+
+                        <br><br>
+
+                        <div class="container boite">
+                            <div id="main_area">
+                                <!-- Slider -->
+                                <div class="row">
+                                    <div class="col-xs-12" id="slider">
+                                        <!-- Top part of the slider -->
+                                        <div class="row">
+                                            <div class="col-sm-3" id="carousel-bounding-box">
+                                                <div class="carousel slide" id="myCarousel">
+                                                    <!-- Carousel items -->
+                                                    <div class="carousel-inner">
+                                                        <div class="active item" data-slide-number="0">
+                                                            <img src="images/vache-1.jpg"></div>
+
+                                                        <div class="item" data-slide-number="1">
+                                                            <img src="images/vache-2.jpg"></div>
+
+                                                        <div class="item" data-slide-number="2">
+                                                            <img src="images/vache-3.jpg"></div>
+
+                                                        <div class="item" data-slide-number="3">
+                                                            <img src="images/vache-4.jpg"></div>
+
+                                                        <div class="item" data-slide-number="4">
+                                                            <img src="images/vache-5.jpg"></div>
+
+                                                        <div class="item" data-slide-number="5">
+                                                            <img src="images/vache-6.jpg"></div>
+                                                    </div>
+                                                    <!-- Carousel nav -->
+                                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4" id="carousel-text"></div>
+
+                                            <div id="slide-content" style="display: none;">
+                                                <div id="slide-content-0">
+                                                    <h2>Marguerite</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+
+                                                <div id="slide-content-1">
+                                                    <h2>Rosalie</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+
+                                                <div id="slide-content-2">
+                                                    <h2>Jacquie</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+
+                                                <div id="slide-content-3">
+                                                    <h2>Framboise</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+
+                                                <div id="slide-content-4">
+                                                    <h2>Brigitte</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+
+                                                <div id="slide-content-5">
+                                                    <h2>Liliane</h2>
+                                                    <p>Lorem Ipsum Dolor</p>
+                                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Slider-->
+
+                                <div class="row hidden-xs" id="slider-thumbs">
+                                    <!-- Bottom switcher of slider -->
+                                    <ul class="hide-bullets">
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-0"><img src="images/vache-1small.jpg"></a>
+                                        </li>
+
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-1"><img src="images/vache-2small.jpg"></a>
+                                        </li>
+
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-2"><img src="images/vache-3small.jpg"></a>
+                                        </li>
+
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-3"><img src="images/vache-4small.jpg"></a>
+                                        </li>
+
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-4"><img src="images/vache-5small.jpg"></a>
+                                        </li>
+
+                                        <li class="col-sm-2">
+                                            <a class="thumbnail" id="carousel-selector-5"><img src="images/vache-6small.jpg"></a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="blockSpace"></div>
+        <!-- Footer-->
+        <footer>
+            <ul class="nav nav-pills">
+                <li class="bottom-bar">
+                    <a href="#">Conditions générales</a>
+                </li>
+                <li class="bottom-bar">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="bottom-bar">
+                    <a href="#">À propos</a>
+                </li>
+                <li class="bottom-bar">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </footer>
+<script type="text/javascript">
+// slide image
+window.onload = function() {
+    var imgs = ["images/presentation7.jpg", "images/presentation1.jpg", "images/presentation2.jpg", "images/presentation3.jpg", "images/presentation4.jpg", "images/presentation5.jpg", "images/presentation6.jpg",
+            "images/presentation0.jpg"
+        ],
+        image = document.getElementById("presentation"),
+        index = 0;
+
+    function hop() {
+        image.src = imgs[(index++) % imgs.length];
+    };
+    cool = setInterval(hop, 3000);
+    // pour arreter mettre clearInterval(cool); quelque part
+};
+
+
+// modal
+$(document).ready(function() {
+    $("#myBtn").click(function() {
+        $("#myModal").modal();
+    });
+});
+
+
+//plugin bootstrap minus and plus
+//http://jsfiddle.net/laelitenetwork/puJ6G/
+$('.btn-number').click(function(e) {
+    e.preventDefault();
+
+    fieldName = $(this).attr('data-field');
+    type = $(this).attr('data-type');
+    var input = $("input[name='" + fieldName + "']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if (type == 'minus') {
+
+            if (currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            }
+            if (parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if (type == 'plus') {
+
+            if (currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if (parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+
+$('.input-number').focusin(function() {
+    $(this).data('oldValue', $(this).val());
+});
+
+$('.input-number').change(function() {
+
+    minValue = parseInt($(this).attr('min'));
+    maxValue = parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+
+    name = $(this).attr('name');
+    if (valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if (valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+});
+
+$(".input-number").keydown(function(e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+        // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+        // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+        // let it happen, don't do anything
+        return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+});
+
+// scroll
+$(function() {
+    $('.lislide>a').on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 500, function() {
+            window.location.hash = hash;
+        });
+    });
+});
+
+// carrousel
+jQuery(document).ready(function($) {
+
+      $('#myCarousel').carousel({
+              interval: 5000
+      });
+
+      $('#carousel-text').html($('#slide-content-0').html());
+
+      //Handles the carousel thumbnails
+     $('[id^=carousel-selector-]').click( function(){
+          var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+          var id = parseInt(id);
+          $('#myCarousel').carousel(id);
+      });
+
+
+      // When the carousel slides, auto update the text
+      $('#myCarousel').on('slid.bs.carousel', function (e) {
+               var id = $('.item.active').data('slide-number');
+              $('#carousel-text').html($('#slide-content-'+id).html());
+      });
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #52BE80 0%, #a8debf 0%, #1E8449 100%);
+  /*background-image: -webkit-radial-gradient( center, circle, #52BE80, #1E8449);*/
+}
+/* navbar */
+.navbar-brand {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.6em;
+}
+
+.navbar-nav li {
+  padding-top: 10px;
+  font-family: 'Merienda', cursive;
+}
+
+.navbar-btn {
+  margin-left: 60px;
+}
+
+.boutonPanier {
+  float:right;
+  margin-top:-53px;
+  margin-left:-10px;
+}
+
+.btn  {
+  font-family: 'Gochi Hand', cursive;
+}
+
+/* carrousel */
+#carousel-example-generic {
+  margin-top: 50px;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px%;
+  width: 100%;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+    text-align: center;
+}
+.ligne{
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.conterneurTextCarrousel {
+  width: 100%;
+}
+
+/* mise en forme du text et du contenu */
+h1 {
+  font-family: 'Gochi Hand', cursive;
+  color:#37D91A;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  font-size: 5vw;
+  padding-top: 40px;
+}
+
+.histoire {
+  padding-top: 20px;
+  font-family: 'Gochi Hand', cursive;
+  color:white;
+  /*text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;*/
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.accueil {
+  line-height:normal;
+}
+
+#accueil img {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+#accueil p {
+  font-size: 1.5vw;
+  margin: 20px;
+  color:white;
+  font-family: 'Merienda', cursive;
+}
+
+#accueil h2, #produit h2, #contact h2, #map h2 {
+  font-size: 3vw;
+  margin: 10px;
+  text-align: center;
+  color:white;
+  border-bottom:2px solid white;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.conteneur, .blockSpace, .blockSpace2 {
+  background-color: transparent;
+/*  background-color: rgba(169, 169, 169, 0.3);*/
+}
+
+.blockSpace {
+  height: 60px;
+}
+
+.blockSpace1 {
+  height: 50px;
+}
+
+.blockSpace2 {
+  height: 75px;
+}
+
+/* mise en forme des thumbnail */
+.product img {
+  width:242px;
+  height:200px;
+}
+
+.product {
+  background-color: #cdecda;
+
+  /*background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #82FB8C 0%, rgba(101, 160, 55, 0) 40%, #1E8449 90%);*/
+}
+
+/*.thumbnail img {
+  width:242px;
+  height:200px;
+}
+
+.thumbnail {
+  background-color: #cdecda;
+
+  /*background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #82FB8C 0%, rgba(101, 160, 55, 0) 40%, #1E8449 90%);
+}*/
+
+/* mise en forme de la map */
+.googleMap {
+  position: relative;
+  padding-bottom: 70%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.googleMap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* mise en forme du formulaire */
+.adresse {
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#exampleInputNom, #exampleInputPrenom {
+  width: 50%;
+  font-family: 'Gochi Hand', cursive;
+}
+
+/* navbar bottom */
+.nav-pills {
+  background-color: rgba(169, 169, 169, 0.6);
+}
+.nav-pills a {
+  color: black;
+  font-weight: bold;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.bottom-bar a {
+  color: black;
+}
+
+/* Formulaire de commande */
+.checkbox{width:50px;}
+.inline {
+display: inline-block;
+}
+label {
+min-width: 120px;
+}
+.titleprghp {
+background:#555;
+height: 46px;
+color: #000;
+font-size: 23px;
+height: 46px;
+line-height: 40px;
+padding: 0 0 0 20px;
+margin: 20px 0 20px;
+}
+
+/* Carousel */
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+.boite {
+  width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  #accueil h2, #produit h2, #contact h2, #map h2 {
+    color:green;
+    font-size: 1.6em;
+  }
+  #accueil p {
+    font-size: 0.8em;
+  }
+  .blockSpace, .blockSpace2 {
+    height: 55px;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  .histoire {
+    font-size: 0.7em;
+  }
+}
