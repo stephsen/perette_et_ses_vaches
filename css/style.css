@@ -227,6 +227,16 @@ margin-top:20px;
   width: 100%;
 }
 
+/* texte Thumbnail */
+.caption p {
+  font-size:1.2em;
+}
+.caption h2 {
+  font-size:1.5em;
+}
+
+
+
 /* responsive */
 @media screen and (max-width: 600px) {
   #accueil h2, #produit h2, #contact h2, #map h2 {
@@ -244,5 +254,12 @@ margin-top:20px;
   }
   .histoire {
     font-size: 0.7em;
+  }
+  /* texte Thumbnail */
+  .caption p {
+    font-size:1em;
+  }
+  .caption h2 {
+    font-size:1.3em;
   }
 }
