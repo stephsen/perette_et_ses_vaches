@@ -129,10 +129,6 @@ h1 {
   height: 50px;
 }
 
-.blockSpace2 {
-  height: 75px;
-}
-
 /* mise en forme des thumbnail */
 .product img {
   width:242px;
@@ -144,17 +140,6 @@ h1 {
 
   /*background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #82FB8C 0%, rgba(101, 160, 55, 0) 40%, #1E8449 90%);*/
 }
-
-/*.thumbnail img {
-  width:242px;
-  height:200px;
-}
-
-.thumbnail {
-  background-color: #cdecda;
-
-  /*background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #82FB8C 0%, rgba(101, 160, 55, 0) 40%, #1E8449 90%);
-}*/
 
 /* mise en forme de la map */
 .googleMap {
@@ -199,25 +184,44 @@ h1 {
 }
 
 /* Formulaire de commande */
-.checkbox{width:50px;}
-.inline {
-display: inline-block;
-}
-label {
-min-width: 120px;
-}
-.titleprghp {
-background:#555;
-height: 46px;
-color: #000;
-font-size: 23px;
-height: 46px;
-line-height: 40px;
-padding: 0 0 0 20px;
-margin: 20px 0 20px;
+
+.modal-body {
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px , #52BE80 0%, #a8debf 0%, #1E8449 100%);
 }
 
-/* Carousel */
+.modal-body th,.modal-body td, .modal-body h2  {
+  color:white;
+}
+
+.modal-body h2 {
+  border-bottom:2px solid white;
+}
+
+.checkbox{
+  width:50px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+label {
+  min-width: 120px;
+  color: white;
+}
+
+.titleprghp {
+  height: 46px;
+  color: white;
+  font-size: 23px;
+  height: 46px;
+  line-height: 40px;
+  padding: 0 0 0 20px;
+  margin: 20px 0 20px;
+  border-bottom:2px solid white;
+}
+
+/* Carousel modal*/
 .hide-bullets {
 list-style:none;
 margin-left: -40px;
@@ -235,25 +239,34 @@ margin-top:20px;
   font-size:1.5em;
 }
 
+.slide-content p {
+  color:white;
+}
 
+#main_area p {
+  color: white;
+}
 
 /* responsive */
 @media screen and (max-width: 600px) {
   #accueil h2, #produit h2, #contact h2, #map h2 {
-    color:green;
     font-size: 1.6em;
   }
   #accueil p {
     font-size: 0.8em;
   }
-  .blockSpace, .blockSpace2 {
-    height: 55px;
+
+  .blockSpace, .blockSpace1 {
+    height: 10px;
   }
   h1 {
     font-size: 1.7em;
   }
   .histoire {
-    font-size: 0.7em;
+    font-size: 0.9em;
+  }
+  .modal-body h2 {
+    font-size: 1.4em;
   }
   /* texte Thumbnail */
   .caption p {
