@@ -71,8 +71,8 @@ body {
 
 /* mise en forme du text et du contenu */
 h1 {
-  font-family: 'Gochi Hand', cursive;
-  color:#37D91A;
+font-family: 'Frijole', cursive;
+  color:#54A759;
   text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   font-size: 5vw;
   padding-top: 40px;
@@ -80,10 +80,10 @@ h1 {
 
 .histoire {
   padding-top: 20px;
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Merienda', cursive;
   color:white;
   /*text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;*/
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-weight: bold;
   text-align: center;
 }
@@ -122,7 +122,7 @@ h1 {
 }
 
 .blockSpace {
-  height: 60px;
+  height: 100px;
 }
 
 .blockSpace1 {
@@ -144,7 +144,7 @@ h1 {
 /* mise en forme de la map */
 .googleMap {
   position: relative;
-  padding-bottom: 70%; // This is the aspect ratio
+  padding-bottom: 60%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
 }
@@ -221,6 +221,11 @@ label {
   border-bottom:2px solid white;
 }
 
+.total {
+  font-weight: bold;
+  font-size:1.1em;
+}
+
 /* Carousel modal*/
 .hide-bullets {
 list-style:none;
@@ -229,6 +234,13 @@ margin-top:20px;
 }
 .boite {
   width: 100%;
+}
+
+/* message validation */
+
+#validation {
+  font-weight: bold;
+  font-size:1.3em;
 }
 
 /* texte Thumbnail */
@@ -245,6 +257,11 @@ margin-top:20px;
 
 #main_area p {
   color: white;
+}
+/* ajout nouvelle div */
+#selectVache {
+  font-size: 1.4em;
+  color: white
 }
 
 /* responsive */
@@ -263,7 +280,7 @@ margin-top:20px;
     font-size: 1.7em;
   }
   .histoire {
-    font-size: 0.9em;
+    font-size: 1.2em;
   }
   .modal-body h2 {
     font-size: 1.4em;
@@ -274,5 +291,42 @@ margin-top:20px;
   }
   .caption h2 {
     font-size:1.3em;
+/* ajout taille texte tr et td*/
+  }
+  tr, td {
+    font-size: 0.9em
+  }
+}
+/* Ajout reposive 800px */
+/* responsive */
+@media screen and (max-width: 800px) {
+  #accueil h2, #produit h2, #contact h2, #map h2 {
+    font-size: 1.6em;
+  }
+  #accueil p {
+    font-size: 0.8em;
+  }
+
+  .blockSpace, .blockSpace1 {
+    height: 15px;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  .histoire {
+    font-size: 1em;
+  }
+  .modal-body h2 {
+    font-size: 1.4em;
+  }
+  /* texte Thumbnail */
+  .caption p {
+    font-size:1em;
+  }
+  .caption h2 {
+    font-size:1.3em;
+  }
+  tr, td {
+    font-size: 0.9em
   }
 }
